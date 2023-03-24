@@ -10,13 +10,11 @@ const Stack = createNativeStackNavigator();
 
 const ShopNavigator = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='Categories'>
-        <Stack.Screen name='Categories' component={CategoriesScreen} />
-        <Stack.Screen name='Switches' component={CategorySwitchesScreen} />
-        <Stack.Screen name='Detail' component={SwitchDetailsScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator initialRouteName='Categories'>
+      <Stack.Screen name='Categories' component={CategoriesScreen} />
+      <Stack.Screen name='Switches' component={CategorySwitchesScreen} />
+      <Stack.Screen name='Detail' component={SwitchDetailsScreen} />
+    </Stack.Navigator>
   );
 };
 

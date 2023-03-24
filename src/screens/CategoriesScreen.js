@@ -4,24 +4,38 @@ import { View, Text, StyleSheet, ImageBackground, SafeAreaView, FlatList, Toucha
 const CategoriesScreen = ({ navigation }) => {
   return (
     <View style={styles.root}>
-      <TouchableOpacity
-        onPress={() => {
-          navigation.navigate('Switches');
-        }}
-      >
-        <ImageBackground
-          style={styles.imgBg}
-          source={require('../../assets/img/category_switches.jpg')}
-        ></ImageBackground>
-        <Text style={styles.imgText}>Switches</Text>
-      </TouchableOpacity>
+      <View style={styles.touch}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('Switches');
+          }}
+        >
+          <ImageBackground
+            style={styles.imgBg}
+            source={require('../../assets/img/switches_kiwi.jpg')}
+          ></ImageBackground>
+          <Text style={styles.imgText}>Switches</Text>
+        </TouchableOpacity>
+      </View>
+      <View>
+        <TouchableOpacity>
+          <ImageBackground
+            style={styles.imgBg}
+            source={require('../../assets/img/category_keyboards.webp')}
+          ></ImageBackground>
+          <Text style={styles.imgText}>Keyboards</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  touch: {
+    marginBottom: 10,
+  },
   root: {
-    marginTop: 10,
+    paddingTop: 8,
     flex: 1,
     backgroundColor: '#2c3e50',
   },
@@ -47,6 +61,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     color: '#ffffff',
     fontSize: 48,
+    shadowColor: '#222222',
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 1,
+    textShadowColor: '#222222',
+    textShadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    textShadowRadius: 3,
   },
 });
 
