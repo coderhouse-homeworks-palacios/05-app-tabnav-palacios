@@ -13,7 +13,7 @@ const CartNavigator = () => {
         name='Cart'
         component={CartScreen}
         options={{
-          title: 'Shopping cart',
+          title: 'Goku eating noodles',
         }}
       />
     </Stack.Navigator>

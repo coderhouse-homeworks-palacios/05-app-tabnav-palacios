@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Divider } from 'react-native';
 import React from 'react';
 import { Entypo } from '@expo/vector-icons';
 
@@ -17,19 +17,20 @@ const TabsNavigator = () => {
         component={ShopNavigator}
         options={{
           tabBarIcon: ({ focused }) => (
-            <View style={styles.tabBarIcon}>
+            <View style={[styles.tabBarIcon]}>
               <Entypo name='keyboard' size={24} color={focused ? '#8e44ad' : '#999999'} />
               <Text style={{ color: focused ? '#222222' : '#999999' }}>Shop</Text>
             </View>
           ),
         }}
       />
+
       <BottomTabs.Screen
-        name='Cart'
+        name='Goku'
         component={CartNavigator}
         options={{
           tabBarIcon: ({ focused }) => (
-            <View style={styles.tabBarIcon}>
+            <View style={[styles.tabBarIcon]}>
               <Entypo name='bowl' size={24} color={focused ? '#d35400' : '#999999'} />
               <Text style={{ color: focused ? '#222222' : '#999999' }}>Goku</Text>
             </View>

@@ -1,4 +1,4 @@
-# Challenge: Views and Navigation
+# Challenge: Tabs Navigation
 
 Jorge Palacios
 
@@ -6,15 +6,15 @@ Jorge Palacios
 
 ### Idea
 
-The main goal of this exercise was to comply with the challenge's requirements in terms of having a couple of screens and navigating between them using a Navigator stack as shown in class.
+The main goal of this exercise was to comply with the challenge's requirements in terms of having a couple of screens and navigating between them using a Tab Navigator stack with two or more navigation stacks within.
 
-Besides, it was an opportunity to tinker with `ImageBackground` and the `TouchableOpacity` components to create some kind of graphic button.
-
-Finally, I wanted to tinker a little bit with the `FlatList` component, even in its most basic form.
+It was built on top of the previous homework with a couple of improvements.
 
 ### Challenges
 
-I wanted to have an "Image Button" inside the `FlatList` component and show a product detail screen. However, it wasn't possible as I had some challenges to expand it successfully.
+The same ones I had with the previous excercise, so I didn't tinker a lot but focused on the tab navigation.
+
+Regarding the tab navigator, I wanted to implement a vertical divider but was running out of time.
 
 ## Mock
 

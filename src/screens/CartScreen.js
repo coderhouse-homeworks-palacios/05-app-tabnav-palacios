@@ -18,9 +18,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#e67e22',
   },
   image: {
     width: '90%',
-    borderRadius: 20,
+    height: '90%',
+    borderRadius: 10,
+    marginTop: '5%',
   },
 });
